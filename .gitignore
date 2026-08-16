@@ -1,0 +1,15 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+*.sqlite*
+*.db
+*.log
+*.pid
+*.lock
+public/
+packages/
+cover_history.jsonl
+insights_*.csv
+insights_*.json
+!.env.example
