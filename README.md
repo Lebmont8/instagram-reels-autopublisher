@@ -1,16 +1,8 @@
 # Instagram Reels Autopublisher
 
-A small, production-minded toolkit for publishing scheduled Reels through the official Instagram Graph API.
+Schedule Instagram Reels through the official Graph API. The SQLite queue keeps daily slots in the configured time zone, blocks duplicate slots, and limits catch-up after downtime so a backlog does not publish all at once.
 
-It provides:
-
-- explicit `dry-run`, container creation, status polling, and publish commands;
-- a persistent SQLite scheduling queue;
-- duplicate-slot protection and timezone-aware daily scheduling;
-- catch-up protection so an outage does not publish a backlog in a burst;
-- optional generated cover images;
-- weekly Reels insight exports to CSV and JSON;
-- no browser automation and no Instagram password handling.
+Use `dry-run` to inspect a request before creating a media container. Creation, status checks, and publishing are separate commands. You can also generate cover images and export weekly insights as CSV or JSON. No browser automation or Instagram password is required.
 
 ## Requirements
 
